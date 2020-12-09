@@ -24,7 +24,6 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@Profile({"!staging", "!production"})
 @Configuration
 @EnableSwagger2
 @RequiredArgsConstructor
@@ -38,10 +37,10 @@ public class SwaggerConfiguration {
 
 		ApiInfo apiInfo = new ApiInfoBuilder()
 			.contact(contact)
-			.description("REMOTE Dashboard 서버 API 정보 입니다.")
+			.description("OAuth Sample")
 			.version("v0.0.1")
-			.title("VIRNECT REMOTE Dashboard Service API Document.")
-			.license("VIRNECT INC All rights reserved.")
+			.title("OAuth sample doc")
+			.license("All rights reserved.")
 			.build();
 
 		List<ResponseMessage> responseMessages = new ArrayList<>();
